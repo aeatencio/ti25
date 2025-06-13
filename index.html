@@ -65,6 +65,25 @@
       font-size: 0.95em;
       color: #555;
     }
+
+    /* Contenedor flexible para que el video se adapte a pantallas chicas y grandes */
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* Proporción 16:9 (altura = 56.25% del ancho) */
+      height: 0; /* Altura inicial nula, se define con el padding */
+      overflow: hidden; /* Oculta cualquier contenido que se desborde */
+      max-width: 800px; /* Ancho máximo en pantallas grandes */
+      margin: 0 auto; /* Centrado horizontal */
+    }
+    
+    /* El iframe ocupa todo el espacio del contenedor adaptándose al ancho disponible */
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%; /* Ocupa el 100% del ancho del contenedor */
+      height: 100%; /* Ocupa el 100% de la altura definida por el padding */
+    }
   </style>
 </head>
 <body>
@@ -98,6 +117,27 @@
         </a>
       </li>
     </ul>
+  </div>
+
+  <!-- Sección: Video para pensar -->
+  <div class="seccion">
+    <h2>🎬 Video para pensar</h2>
+  
+    <!-- Contenedor responsive del video -->
+    <div class="video-container">
+      <iframe
+        src="https://www.youtube.com/embed/fb506ebswb8"
+        title="Microaprendizaje: ¿Qué es la huella digital?"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+    </div>
+  
+    <!-- Breve descripción debajo del video -->
+    <div class="descripcion-resumen" style="text-align:center;">
+      Un breve video para reflexionar sobre qué es la huella digital y cómo nuestras acciones en internet construyen una identidad que nos acompaña en la vida real.
+    </div>
   </div>
 
   <!-- Material de clases -->
