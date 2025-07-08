@@ -75,13 +75,6 @@
       justify-content: flex-start;/* Alinea los videos a la izquierda por defecto */
     }
     
-    /* A partir de 768px de ancho (pantallas grandes), centra horizontalmente los videos */
-    @media (min-width: 768px) {
-      .contenedor-videos {
-        justify-content: center;  /* Centra la fila de videos en pantallas amplias */
-      }
-    }
-    
     /* Estilo individual de cada video */
     .video {
       flex: 0 0 auto;             /* Evita que los videos se achiquen o crezcan */
@@ -108,16 +101,29 @@
   <!-- Contenedor que permite el scroll horizontal -->
   <div class="contenedor-videos">
 
+    <!-- Ciberespacio -->
     <div class="video">
       <iframe src="https://www.youtube.com/embed/AIYtgDOjQX8" allowfullscreen></iframe>
     </div>
 
+    <!-- ¿Qué es la huella digital? -->
     <div class="video">
       <iframe src="https://www.youtube.com/embed/fb506ebswb8" allowfullscreen></iframe>
     </div>
 
+    <!-- ¿Qué es una computadora? -->
     <div class="video">
       <iframe src="https://www.youtube.com/embed/xL8C5CIxDts" allowfullscreen></iframe>
+    </div>
+
+    <!-- ¿Qué es un sistema operativo? -->
+    <div class="video">
+      <iframe src="https://www.youtube.com/embed/vnJCudAed08" allowfullscreen></iframe>
+    </div>
+
+    <!-- Netiquetas -->
+    <div class="video">
+      <iframe src="https://www.youtube.com/embed/G8qFTlGnC7U" allowfullscreen></iframe>
     </div>
 
   </div>
